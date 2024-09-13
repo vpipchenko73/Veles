@@ -1,0 +1,30 @@
+<form method="post" class="contact_form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {% load crispy_forms_tags %}
+
+    <div class="modal-header">
+        <!--    <h5 class="modal-title">Заголовок модального окна</h5>-->
+        <b>Удалить сообщение от &#8195;</b> {{message.datecreation}}
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+    </div>
+
+
+    <div class="modal-body">
+        <p><b>Автор &#8195;</b> {{ message.author}}</p>
+        <p><b>Тема &#8195;</b> {{ message.theme}}</p>
+    </div>
+
+    <form method="post" class="contact_form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+
+    <div class="modal-footer">
+        <div style="display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-danger">Удалить</button>
+        </div>
+    </div>
+
+</form>

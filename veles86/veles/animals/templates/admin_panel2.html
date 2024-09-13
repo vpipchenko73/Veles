@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+{% load django_tables2 %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin_panel</title>
+    <!--    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">-->
+
+</head>
+<header>
+    <div style="width: 1440px; height: 80px; background: #0d6efd; margin: auto; display: flex; align-items: center;">
+        <div style="text-transform: uppercase; margin-left: 40px; color: white; font-size:x-large;">
+            <b>
+                Aдминистративная панель &mdash; общая информация
+            </b>
+        </div>
+
+    </div>
+</header>
+<body>
+
+<div style="margin: 40px; border: solid; border-color: red;">
+    <div style="display: flex;">
+    <div style="width: 50%; border: solid; border-color: red;">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th colspan="2" style="text-align: center; font-size:large;">
+                    <b>Статистические данные</b>
+                </th>
+            </tr>
+
+            </thead>
+            <tbody>
+            <tr style="font-size:large; ">
+                <th scope="col"><b>Раздел</b></th>
+                <th scope="col" style="text-align: center;"><b>Количество</b></th>
+            </tr>
+            <tr>
+                <td>Количество текущих сообщений</td>
+                <td style="text-align: center;">{{mess_kol}}</td>
+            </tr>
+            <tr>
+                <td>Общее количество животных в базе</td>
+                <td style="text-align: center;">{{dog_summa}}</td>
+            </tr>
+            <tr>
+                <td>Количество животных в приюте</td>
+                <td style="text-align: center;">{{dog_priut}}</td>
+            </tr>
+            <tr>
+                <td>Количество здоровых животных в приюте</td>
+                <td style="text-align: center;">{{dog_h}}</td>
+
+            </tr>
+            <tr>
+                <td>Количество больных животных в приюте</td>
+                <td style="text-align: center;">{{dog_s}}</td>
+            </tr>
+            <tr>
+                <td>Количество умерших животных в приюте</td>
+                <td style="text-align: center;">{{dog_d}}</td>
+            </tr>
+            <tr>
+                <td>Количество не привитых животных в приюте</td>
+                <td style="text-align: center;">{{dog_vaccinat}}</td>
+            </tr>
+            <tr>
+                <td>Количество не проглистогоненых животных в приюте</td>
+                <td style="text-align: center;">{{dog_worm}}</td>
+            </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+    <div style="width: 50%; border: solid; border-color: red; display: flex; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: column;">
+        <a href="{% url 'dog_create' %}" class="btn btn-primary btn-lg" style="margin-top: 10px;">Создать новое животное</a>
+        <a href="{% url 'post_create' %}" class="btn btn-primary btn-lg" style="margin-top: 10px;">Создать новость</a>
+        <a href="{% url 'message_view' %}" class="btn btn-primary btn-lg" style="margin-top: 10px;">Посмотреть сообщения</a>
+        <a href="{% url 'dog_create' %}" class="btn btn-primary btn-lg" style="margin-top: 10px;">Пристроенные животные</a>
+        <a href="{% url 'index' %}" class="btn btn-warning btn-lg" style="margin-top: 10px;">На главную страницу</a>
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <div style="margin-top: 20px">
+        <p style="text-indent: 10px; font-size:large;">
+            <b>Детальная информация о животных</b>
+        </p>
+
+    </div>
+    <div>
+        {% render_table table 'django_tables2/bootstrap5.html' %}
+    </div>
+    <div>
+        {% if filter %}
+        <form action="" method="get" class="form form-inline" style="width: 50%;">
+
+            {% bootstrap_form filter.form %}
+            <div>
+                <!--            {% bootstrap_button 'Найти' id='fnd' %}-->
+                <button id="fnd" type="submit" class="btn btn-primary">Найти</button>
+                <button id="clr" type="button" class="btn btn-primary" style="margin-left: 10px;">Отчистить</button>
+            </div>
+        </form>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+
+    document.getElementsByClassName("form-label")[0].innerHTML='';
+    document.getElementById("id_name__icontains").focus();
+    document.getElementById("clr").onclick = f_clear;
+
+    function f_clear() {
+        document.getElementById("id_name__icontains").value=''
+        document.getElementById('fnd').click();
+        console.log('asdf')
+    }
+
+</script>
+
+</body>
+</html>

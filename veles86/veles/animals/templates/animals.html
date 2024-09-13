@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for dog in dogs %}
+    <div>{{dog.name}}</div>
+    <div>{{ dog.get_gender_display }}</div>
+    <div>
+        <img src={{dog.image.url}} width="300" height="auto"  alt="Account">
+
+    </div>
+
+    {% endfor %}
+
+<div class="card" style="width: 25%; border-color: red; border-radius: 10px;">
+  <img src="{% static 'site_files/Carusel/2.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карточки.</p>
+  </div>
+</div>
+</body>
+</html>

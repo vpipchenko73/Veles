@@ -1,0 +1,273 @@
+пустое поле модели
+https://sky.pro/media/raznicza-mezhdu-nulltrue-i-blanktrue-v-django/
+https://learntutorials.net/ru/django/topic/3686/%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-%D0%BF%D0%BE-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8E-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Django/Models
+
+поля модели доступ
+https://translated.turbopages.org/proxy_u/en-ru.ru.294e1de0-65f6dd46-a8921273-74722d776562/https/stackoverflow.com/questions/21707850/how-to-access-a-field-in-a-related-django-model-other-than-the-primary-key
+
+
+Модели в Джанго
+https://pythonclass.ru/django/modeli-v-django/#IntegerField
+
+Поле телефонного номера
+https://django-phonenumber-field.readthedocs.io/en/latest/index.html
+
+Изменение даты
+https://pythonru.com/biblioteki/modul-dateutil
+https://stackoverflow.com/questions/5871168/how-can-i-subtract-or-add-100-years-to-a-datetime-field-in-the-database-in-djang
+
+related_name в django для чего он
+https://yandex.ru/video/preview/5417290644796438713
+
+Подключение статических файлов
+https://proproprogs.ru/django/podklyuchenie-staticheskih-faylov-filtry-shablonov
+https://pythonru.com/uroki/django-static
+
+
+Настраиваем STATIC_ROOT, STATICFILES_DIRS и MEDIA_ROOT правильно
+http://zetblog.ru/django-nastraivaem-static_root-staticfiles_dirs-i-media_root-pravilno.html
+
+Загрузка файлов с использованием моделей
+https://proproprogs.ru/django4/django4-zagruzka-faylov-s-ispolzovaniem-modeley
+
+Как загружать файлы и изображения в приложении Django
+https://nuancesprog.ru/p/15641/
+
+Шесть Python-пакетов, которые рекомендуется использовать в каждом веб-приложении на Django
+https://habr.com/ru/articles/514348/
+
+Бургер меню
+https://alvarotrigo.com/blog/hamburger-menu-css/
+
+Плагины фигма для работы с изображением
+https://awdee.ru/21-figma-plugins-images/
+
+как вырезать фон в Figma
+https://www.youtube.com/watch?v=gm2hJmbvMzw&t=19s
+
+Изменить цвет рисунка в Figma
+https://yandex.ru/video/preview/15322077837744123538
+
+Все способы вертикального выравнивания
+https://habr.com/ru/companies/netcracker/articles/277433/
+https://skillbox.ru/media/code/vyravnivanie-po-tsentru-v-css-priyemy-svoystva-podvodnye-kamni/#stk-9
+для картинок
+http://ktvd.ru/vertical-align-for-picture/
+https://habr.com/ru/companies/ruvds/articles/509706/
+https://translated.turbopages.org/proxy_u/en-ru.ru.63dcf74b-666a7eb2-349782b7-74722d776562/https/www.freecodecamp.org/news/html-center-image-css-align-img-center-example/
+https://www.w3.org/Style/Examples/007/center.ru.tmpl
+
+
+Селекторы тильда ~  и другие
+https://webdevtips.pro/css/30-must-know-css-selectors/
+
+Стрелки в карусели ботстрап
+https://sky.pro/wiki/html/kak-izmenit-tsvet-strelok-v-karuseli-bootstrap-css-reshenie/
+
+Боотстрап отступы
+https://itchief.ru/bootstrap/spacing-v4
+
+Отображение определённой части картинки в HTML и CSS
+https://sky.pro/wiki/html/otobrazhenie-opredelyonnoy-chasti-kartinki-v-html-i-css/
+
+Спецсимволы
+https://html5book.ru/specsimvoly-html/
+
+Работа с модальными окнами в Боотстрап 5
+https://www.geeksforgeeks.org/bootstrap-5-modal-via-javascript/
+
+7 полезных методов объектов JavaScript
+https://nuancesprog.ru/p/15906/
+
+Передача атрибутов в модальное окно
+https://web-revenue.ru/verstka/data-atributy-v-modalnom-okne
+
+REQUEST джанго
+https://pythonpip.ru/django/obrabotka-zaprosov-otvetov-django
+
+как передать переменную в функцию по ссылке
+https://yandex.ru/video/preview/6030558930535619690
+
+JavaScript аналог функций printf/String.Format
+https://sky.pro/media/javascript-analog-funkczij-printf-string-format/
+
+Как преобразовать набор запросов Django в JSON
+https://www.programmingfunda.com/how-to-convert-django-queryset-to-json/
+
+Модальные окна Боотстрап+Джанго (Людоед)
+https://dihfahsih.blogspot.com/2019/08/how-to-use-django-bootstrap-modal-forms.html
+https://github.com/trco/django-bootstrap-modal-forms
+https://pypi.org/project/django-bootstrap-modal-forms/#description  ( по нему сделал ) 
+
+Локальное хранилище LocalStorage, sessionStorage JS
+https://yandex.ru/video/preview/4335988347039451801
+
+Использование сессий ДЖанго
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Django/Sessions
+https://djangodoc.ru/3.2/topics/http/sessions/
+
+Как использовать AJAX в Django: подробное руководство по добавлению AJAX в шаблоны Django
+https://dzen.ru/a/ZRU4O-6NLzTl-7pr
+
+Как получить значения POST-запроса в Django?
+https://translated.turbopages.org/proxy_u/en-ru.ru.fc0703bd-664318f3-a16e8085-74722d776562/https/stackoverflow.com/questions/11336548/how-to-get-post-request-values-in-django
+
+Submit картинкой
+http://lifeexample.ru/css-verstka-sayta/submit-kartinkoy.html
+Как сделать свою кнопку для отправки формы?
+https://htmlbook.ru/faq/kak-sdelat-svoyu-knopku-dlya-otpravki-formy
+https://translated.turbopages.org/proxy_u/en-ru.ru.a8e70b47-66432e40-53dc5a79-74722d776562/https/stackoverflow.com/questions/64232258/how-does-the-action-attribute-work-in-a-django-form
+
+Как сделать нажатие на кнопку js
+https://ru.hexlet.io/qna/javascript/questions/kak-sdelat-nazhatie-na-knopku-js
+
+Симуляция программных нажатий клавиш в JavaScript
+https://sky.pro/wiki/javascript/simulyatsiya-programmnykh-nazhatiy-klavish-v-java-script/
+
+Работа с модальными окнами
+https://blog.benoitblanchon.fr/django-htmx-modal-form/
+http://django-frontend-forms-demo.brainstorm.it/
+https://pythonhelp.ru/django/django-bootstrap-modalnoe-okno/
+https://itchief.ru/bootstrap/modal
+
+Как использовать AJAX в Django: подробное руководство по добавлению AJAX в шаблоны Django
+https://apipython.ru/kak-ispolzovat-ajax-v-django-podrobnoe-rukovodstvo-po-dobavleniyu-ajax-v-shablony-django/
+
+Разные ID
+http://ru.voidcc.com/question/p-wenjivzy-xz.html то что было у меня
+
+Как изменить курсор при наведении мыши в CSS
+https://ru.w3docs.com/snippets/css/kak-izmenit-kursor-pri-navedenii-myshi-v-css.html
+
+Формирование URL-адресов в шаблонах
+https://proproprogs.ru/django/formirovanie-url-adresov-v-shablonah
+
+Привязка неопределенного количества фотографий к новости
+https://stackoverflow.com/questions/47557494/save-unknown-number-of-images-in-django
+https://ru.stackoverflow.com/questions/904802/%D0%9A%D0%B0%D0%BA-%D0%BF%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D1%82%D1%8C-%D0%BA-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B9-%D0%B2-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B9-%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%BA%D0%B5-django
+https://www.cyberforum.ru/python-django/thread2422931.html
+
+Как прикрепить div внизу контейнера без absolute в CSS
+https://sky.pro/wiki/html/kak-prikrepit-div-vnizu-konteynera-bez-absolute-v-css/
+https://qna.habr.com/q/295842
+https://melnik909.gitbooks.io/tutorial-for-beginner-front-end-developer/content/pozitsionirovanie-s-pomoschyu-svoistva-position.html
+
+Определить цвет онлайн
+https://sanstv.ru/color#7cabbb
+https://get-color.ru/image/
+https://imagecolorpicker.online/ru/
+
+Генератор сочетаний цветов текста и фона
+https://gradients.app/ru/newlegibility
+
+Как загрузить несколько файлов Django?
+https://qna.habr.com/q/799217
+
+Как использовать вложенные формы в Django
+https://evileg.com/ru/post/455/
+
+Как правильно работать с вложенными формами в Django?
+https://qna.habr.com/q/349917
+
+Узнайте, как реализовать две разные формы на одной странице способом “Django”
+https://pythobyte.com/handling-multiple-forms-on-the-same-page-in-django-fv89t2s3j-797639bb/
+
+Не самые популярные методы Django ORM
+https://habr.com/ru/companies/otus/articles/654081/
+
+Django: несколько моделей в одном шаблоне с использованием форм MultiModelForm
+https://stackoverflow.com/questions/569468/django-multiple-models-in-one-template-using-forms
+
+Сложные формы
+https://habr.com/ru/articles/158969/
+
+Мультиформа и мультимодельформа (betterforms MultiModelForm)
+https://django-betterforms.readthedocs.io/en/latest/multiform.html
+
+Инструкция
+https://readthedocs.org/projects/django-betterforms/downloads/pdf/stable/
+
+Как правильно применять inlineformset_factory?
+https://qna.habr.com/q/366967
+
+python — поля Django inlineformset_factory и ManyToMany
+https://pythonkb.com/python-django-inlineformset_factory-and-manytomany-fields/
+
+Фабрика встроенных наборов форм Django с примерами
+https://www.letscodemore.com/blog/django-inline-formset-factory-with-examples/
+
+Сжатая шпаргалка по работе с формами в Django
+https://dzen.ru/a/Y2ef-Q-x9Tsm7edI
+https://proglib.io/p/kurs-django-chast-3-osnovy-raboty-s-formami-2024-03-15
+
+Как я могу исключить несколько полей из проверки в формах
+https://stackoverflow.com/questions/16601112/how-can-i-exclude-few-fields-from-validation-in-forms
+
+Исправление ошибок в Python
+https://www.slingacademy.com/article/fixing-python-nonetype-object-attribute-error/
+
+система шаблонов django, вызывающая функцию внутри модели c параметрами
+https://translated.turbopages.org/proxy_u/en-ru.ru.d7ff94e0-6653fd68-e4bd1917-74722d776562/https/stackoverflow.com/questions/1333189/django-template-system-calling-a-function-inside-a-model
+
+Пользовательские теги шаблонов   помоему это решение проблемы
+https://proproprogs.ru/django/django-polzovatelskie-tegi-shablonov
+
+Работа с каруселью Боотстрап
+https://codingyaar.com/bootstrap-carousel-multiple-items-increment-by-1/
+
+5 простых способов перебирать данные в HTML с помощью JavaScript
+https://dev.to/ayoubkhan558/5-simple-ways-to-loop-over-data-in-html-using-javascript-30kb
+
+Перебор массива
+https://codechick.io/tutorials/javascript/js-for-of
+
+работа с данными в django
+https://docs.djangoproject.com/en/5.0/topics/db/queries/
+
+javascript-шаблонизация для начинающих на примере lodash template
+https://webdevkin.ru/posts/frontend/javascript-lodash-templates
+https://programmersought.com/article/670510066399/
+
+6 способов объявления функций в JavaScript
+https://fruntend.com/posts/6-sposobov-obyavleniya-funktsiy-v-javascript
+
+Django-tables2 доступен на pypi и может быть установлен с помощью pip:
+https://django-tables2.readthedocs.io/en/latest/pages/installation.html
+django-tables2. Руководство
+https://habr.com/ru/articles/326194/
+
+классный сайт по джанго
+https://pocoz.gitbooks.io/django-v-primerah/content/glava-5-obschii-dostup-k-kontentu-na-saite/posting-soderzhimogo-s-drugih-saitov/ochistka-polei-formi.html
+
+Работа с формами
+https://developer.mozilla.org/ru/docs/Learn/Server-side/Django/Forms
+
+Размеры шрифта
+https://site4business.net/css/razmer-shrifta.html
+
+Добавление произвольных атрибутов HTML в поля Django-формы
+https://sky.pro/wiki/html/dobavlenie-proizvolnykh-atributov-html-v-polya-django-formy/
+
+Использование условия 'AND' в фильтрах Django: подробный гайд
+https://sky.pro/wiki/sql/ispolzovanie-usloviya-and-v-filtrakh-django-podrobniy-gayd/
+
+Удаление дубликатов в Django-запросах: метод duplicate()
+https://sky.pro/wiki/sql/udalenie-dublikatov-v-django-zaprosakh-metod-duplicate/
+
+Встроенные теги шаблонов
+https://metanit.com/python/django/2.7.php
+
+Валидация
+https://proproprogs.ru/django4/django4-validaciya-poley-formy-sozdanie-polzovatelskogo-validatora
+
+Формы джанго
+https://docs.djangoproject.com/en/5.0/ref/forms/fields/
+https://translated.turbopages.org/proxy_u/en-ru.ru.15546357-66927b14-e63393ed-74722d776562/https/www.geeksforgeeks.org/django-form-data-types-and-fields/
+
+Виджеты Джанго
+https://djangodoc.ru/3.2/ref/forms/widgets/
+
+Определить IP адрес
+https://2ip.ru/lookup/
+

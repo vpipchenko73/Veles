@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header>
+    <div style="width: 1440px; height: 80px; background: #0d6efd; margin: auto; display: flex; align-items: center;">
+        <div style="width: 80%; text-transform: uppercase; margin-left: 40px; color: white;
+                    font-size:x-large; border: solid; border-color: red; margin: auto; text-align: center;">
+            Aдминистративная панель &mdash; редактирование фотографий животного
+        </div>
+    </div>
+
+</header>
+
+<body>
+
+<div style="display: flex; justify-content: center; ">
+    <div style="width: 30%; margin-top: 5%">
+        <form method="post" class="contact_form" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            <div class="asd" >
+                {{ form|crispy }} <!-- Теперь нам нужна только готовая форма и кнопка -->
+            </div>
+            <div>
+
+            </div>
+            <div>
+                {{ image_form|crispy }}
+            </div>
+            <input type="submit" class="btn btn-primary" value="Изменить">
+
+        </form>
+    </div>
+</div>
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', Border_dog_foto);
+    function Border_dog_foto() {
+    for (let i=1; i<5; i++) {
+        if (document.getElementsByClassName("input-group mb-2")[i]) {
+        document.getElementsByClassName("input-group mb-2")[i].style='border: 3px solid #0d6efd'
+        }
+        if (document.getElementById(`id_dogimages_set-${i-1}-image`)) {
+        document.getElementById(`id_dogimages_set-${i-1}-image`).style='border: 3px solid #0d6efd'
+        }
+    }
+    document.getElementsByClassName("input-group mb-2")[0].style='border: 3px solid #0d6efd'
+    document.getElementById("id_image").style='border: 3px solid #0d6efd'
+    document.getElementById("image-clear_id").style='display: none;'
+    document.getElementsByClassName("form-check-label mb-0")[0].style='display: none;'
+    }
+
+</script>
+
+</body>
+</html>

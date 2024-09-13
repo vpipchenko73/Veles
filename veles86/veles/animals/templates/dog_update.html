@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<header>
+    <div style="width: 1440px; height: 80px; background: #0d6efd; margin: auto; display: flex; align-items: center;">
+        <div style="width: 80%; text-transform: uppercase; margin-left: 40px; color: white;
+                    font-size:x-large; border: solid; border-color: red; margin: auto; text-align: center;">
+            Aдминистративная панель &mdash; изменение основных данных о животном
+        </div>
+    </div>
+
+</header>
+<body>
+<div>
+    <div style="width: 90%; height: 100%; margin: auto; ">
+        <form method="post" class="contact_form" enctype="multipart/form-data">
+
+            {% csrf_token %}
+            <!--     {{ form|crispy }} &lt;!&ndash; Теперь нам нужна только готовая форма и кнопка &ndash;&gt;-->
+            <div style="margin-top: 5%; display: flex;">
+                <div style="width: 45%; margin-left: 30px">
+
+                    <div style="margin-top: 10px;">{{ form.name.label }} {{ form.name }}</div>
+                    <div style="margin-top: 10px;">{{ form.fenotip.label }} {{ form.fenotip }}</div>
+                    <div style="margin-top: 10px;">{{ form.gender.label }} {{ form.gender }}</div>
+                    <div style="margin-top: 10px;">{{ form.date_of_birth.label }} {{ form.date_of_birth }}</div>
+                    <div style="margin-top: 10px;">{{ form.personality.label }} {{ form.personality }}</div>
+                </div>
+                <div style="width: 45%; margin-left: 30px">
+                    <div style="margin-top: 10px;">{{ form.personality.label }} {{ form.personality }}</div>
+                    <div style="margin-top: 10px;">{{ form.color.label }} {{ form.color }}</div>
+                    <div style="margin-top: 10px;">{{ form.features.label }} {{ form.features }}</div>
+                    <div style="margin-top: 40px; display: flex;">
+                        <div style="margin-right: 10px; ">{{ form.check_box.label }}</div>
+                        <div style="padding-bottom: 0px; ">{{ form.check_box }}</div>
+                        <input type="submit" class="btn btn-primary" value="Изменить" style="margin-left: 50px;">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

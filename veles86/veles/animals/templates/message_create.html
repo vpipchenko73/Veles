@@ -1,0 +1,21 @@
+<form method="post" class="contact_form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {% load crispy_forms_tags %}
+
+    <div class="modal-header">
+        <!--    <h5 class="modal-title">Заголовок модального окна</h5>-->
+        <b>Форма отправки сообщения для приюта</b>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+    </div>
+
+
+    <div class="modal-body">
+        {{ form|crispy }}
+        <div style="display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </div>
+    </div>
+
+</form>

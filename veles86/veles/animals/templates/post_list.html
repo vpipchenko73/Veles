@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+{% load animals_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<style>
+
+
+</style>
+
+
+</head>
+
+<body>
+{% include "_modal.html" %}
+
+<!-- Bootstrap 5 -->
+<script src="{% static 'js/bootstrap5.modal.forms.js' %}"></script>
+<!-- You can alternatively load the minified version -->
+<script src="{% static 'js/bootstrap5.modal.forms.min.js' %}"></script>
+<script src="{% static 'js/application_functions.js' %}"></script>
+
+<header class="header0">
+    <img src="{% static 'site_files/header_1.jpg' %}" alt="Dog_image">
+</header>
+
+<div class="header1">
+    <div class="header2">
+    </div>
+
+    <div class="header3">
+
+        <div class="n_animals1">
+            Новости
+            <!--            <p>&#169; &#8194;OOO &#34;UMBA-DOG &#34; &#9742;  +7 922 1111001</p>-->
+        </div>
+    </div>
+
+    <div class="s_animals1">
+        <a href="{% url 'index' %}">На главную страницу</a>
+    </div>
+
+</div>
+<div style="border: solid; border-color: red;">
+    <div style="width: 80%; border: solid; border-color: red; margin: auto;">
+        {% for post in posts %}
+        <div style="margin-top: 20px;">
+        <div style="border: solid; border-color: red; ">
+            {{post.datecreation}} {{post.title}}
+        </div>
+        <div style="display: flex;">
+            <div style="width: 30%; border: solid; border-color: red;">
+                <div id="carouselExample-{{ post.pk }}" class="carousel slide carousel-fade" data-bs-interval="1000">
+
+                    <div class="carousel-inner" role="listbox" style=" width:auto; height: 300px; !important;">
+                        {% get_post_images post.pk as images %}
+                        {% for image in images %}
+                        <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %}">
+                            <img class="d-block" src="{{ image.image.url }}"
+                                 style="margin:auto; height:300px; width:auto; border-radius:5px;">
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample-{{ post.pk }}"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample-{{ post.pk }}"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+            </div>
+            <div style="width: 70%; text-indent: 50px; border: solid; border-color: red;">
+                {{post.content}}
+
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,77 @@
+{% load animals_tags %}
+
+<div class="modal-header">
+<!--    <h5 class="modal-title">Заголовок модального окна</h5>-->
+    <b>Моя жизнь в приюте</b>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+
+
+<div class="modal-body">
+
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-interval="1000">
+                <div class="carousel-inner" style="border-radius: 10px;">
+                    <div class="carousel-item active">
+                        <img src="{{dog.image.url}}" alt="..." class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block" style="margin-top: 0px; ">
+                            <span>
+                                <b>
+                                <p>Привет Я &#171; {{dog.name}} &#187;</p>
+                                <p>Живу в приюте &#8212;{{dog.reverse_adrow.last.time_of_stay}}</p>
+                                </b>
+
+                            </span>
+                        </div>
+                    </div>
+                    {% for cart in carusel %}
+                    <div class="carousel-item">
+                        <img src="{{cart.image.url}}" alt="..." class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+
+            </div>
+
+<!--    <div class="">-->
+<!--        {{dog_count}}-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        {% get_images dog.pk as images %}-->
+<!--        {% for cart in images %}-->
+<!--        <p>-->
+<!--            <img src={{cart.image.url}} style="width: 50px; height: auto; border-radius: 5px;" alt="Foto_Dog">-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        test-->
+
+<!--        {% for cart in carusel %}-->
+<!--        <p>-->
+<!--            <img src={{cart.image.url}} style="width: 50px; height: auto; border-radius: 5px;" alt="Foto_Dog">-->
+<!--        </p>-->
+<!--        {% endfor %}-->
+
+<!--    </div>-->
+{% comment %}
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+</div>
+{% endcomment %}

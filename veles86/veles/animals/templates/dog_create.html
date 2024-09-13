@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+
+<header>
+    <div style="width: 1440px; height: 80px; background: #0d6efd; margin: auto; display: flex; align-items: center;">
+        <div style="width: 80%; text-transform: uppercase; margin-left: 40px; color: white;
+                    font-size:x-large; margin: auto; text-align: center;">
+            Aдминистративная панель &mdash; создание нового животного
+        </div>
+    </div>
+
+</header>
+<body>
+
+<div style="margin-top: 20px;">
+    <form method="post" class="contact_form" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <fieldset
+                style="width: 70%; border: solid; border-color: #0d6efd; border-width: 3px; border-radius: 10px; margin: auto;">
+            <legend class="bg-primary text-white p-8" style="padding-left: 15px;">Данные животного</legend>
+
+            <div style="display: flex; justify-content: center;">
+                <div style="width: 45%; height: auto; margin-right: 10px;">
+                    <div style="text-align: center; font-size:x-large; color: #0d6efd;">
+                        Основные данные животного
+                        </div>
+                    <div>
+                        {{ form.dog|crispy }}
+                    </div>
+                    <div style="text-align: center; font-size:x-large; color: #0d6efd;">
+                        Текущее состояние животного
+                        </div>
+                    <div>
+                        {{ form.health|crispy }}
+                        {{ form.disease|crispy }}
+                    </div>
+                </div>
+                <div style="width: 45%; height: auto;margin-left: 10px;">
+                    <div style="text-align: center; font-size:x-large; color: #0d6efd;">
+                        Адрес обнаружения животного
+                        </div>
+                    {{ form.adress_f|crispy }}
+                    <div style="text-align: center; font-size:x-large; color: #0d6efd;">
+                        Адрес текущего нахождения животного
+                        </div>
+                    {{ form.adress_o|crispy }}
+                </div>
+            </div>
+            <div style="margin: 10px; text-align: center;">
+                <input type="submit" class="btn btn-primary" value="Добавить dog">
+            </div>
+
+        </fieldset>
+    </form>
+</div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', Border_dog_create);
+    function Border_dog_create() {
+    document.getElementById("id_dog-image").style='border: 3px solid #0d6efd'
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+документация таблиц
+https://django-tables2.readthedocs.io/en/latest/pages/table-data.html#table-data
+
+django-tables2 - An app for creating HTML tables
+https://cache9.pinboard.in/jfischer/7be87551d43adf29ab17/
+
+python – Django: django-tables2 pagination and filtering
+https://pythonkb.com/python-django-django-tables2-pagination-and-filtering/
+
+Using django-tables2, django-filter and django-crispy-forms together
+https://kuttler.eu/en/post/using-django-tables2-filters-crispy-forms-together/
+
+[Django]-How do i create a table from a dict using django-tables2
+https://www.thecoderscamp.com/how-do-i-create-a-table-from-a-dict-using-django-tables2-django/
+
+Начало » Django » Django-tables2 Не могу скрыть колонку [RSS Feed]
+https://python.su/forum/topic/29115/
+
+пользовательская сортировка для таблицы в django-tables2
+https://qwertybox.ru/questions/37664026/
+
+Django Таблицы - Фильтрация столбцов
+https://coderoad.ru/13611741/Django-%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%81%D1%82%D0%BE%D0%BB%D0%B1%D1%86%D0%BE%D0%B2
+
+Таблицы Django - Фильтрация столбцов
+https://utyatnishna.ru/info/535159/django-tables-column-filtering
+
+Отзывчивая таблица с помощью Django и htmx  стилизация  с тегами НТМЛ
+https://codertime.ru/django-ru/otzyvchivaya-tablitsa-s-pomoshchyu-django-i-htmx/
+
+Запросы Django ORM – выполнение и оптимизация
+https://pythonpip.ru/django/zaprosy-django-orm
+
+
+Django_tables2 с кнопками «Редактировать» и «Удалить». Как это сделать правильно?
+https://coder-studio.ru/q-2084722/django-tables2-s-knopkami-redaktirovat-i-udalit-kak-eto-sdelat-pravil-no
+
+Как указать класс таблицы с помощью django_tables2 стилизация
+https://django.fun/qa/429833/
+
+Как добиться отображения функции модели в django-tables2
+https://ru.stackoverflow.com/questions/1222186/%D0%9A%D0%B0%D0%BA-%D0%B4%D0%BE%D0%B1%D0%B8%D1%82%D1%8C%D1%81%D1%8F-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%B2-django-tables2
+
+Обратный доступ к Django Foreignkey, когда родительская модель имеет несколько внешних ключей
+https://stackoverflow.com/questions/60618191/django-foreignkey-reverse-access-when-parent-model-has-multiple-foreignkeys
+
+---------------------------------------------------Пагинация--------------------------------------------------------------
+Displaying Page Numbers with django-tables2
+https://pythonhint.com/post/4472683204371645/displaying-page-numbers-with-django-tables2?page={{%20paginator.num_pages%20}}
+
+Responsive table with Django and htmx   помоему то что надо
+https://dev.to/joashxu/responsive-table-with-django-and-htmx-1fob
+
+Тож посмотреть
+https://kuttler.eu/en/post/using-django-tables2-filters-crispy-forms-together/
+
+Таблицы Django 2. Стилизация пагинатора
+https://www.reddit.com/r/django/comments/iy758p/django_tables_2_paginator_styling/
+---------------------------------------------------------------------про фильтры -------------------------------------------
+Настройка фильтров Django с помощью классов CSS: два способа улучшить взаимодействие с пользователем
+https://www.letscodemore.com/blog/customizing-django-filters-with-css-classes/
+
+Интеграция django_filters в Django   про фильтр
+https://www.yourtodo.ru/posts/integratsiya-djangofilters-v-django/
+
+Документация фильтров
+https://django-filter.readthedocs.io/en/stable/guide/rest_framework.html
+
+https://qna.habr.com/q/701842
+
+Часть 3: Основы работы с формами
+https://proglib.io/p/kurs-django-chast-3-osnovy-raboty-s-formami-2024-03-15
+
+API форм
+https://djangodoc.ru/3.2/ref/forms/api/
+
+class CashierTable(tables.Table):
+    delete = tables.TemplateColumn(template_name='main/delete_template.html', orderable=False)
+
+    class Meta:
+        model = Cashier
+        order_by = '-id'
+
+
+https://learn.javascript.ru/events-change-input  пример js
+
+https://translated.turbopages.org/proxy_u/en-ru.ru.935d7652-6662b8e6-fb1e0515-74722d776562/https/stackoverflow.com/questions/2825144/how-to-get-input-text-length-and-validate-user-in-javascript
+
+https://sky.pro/wiki/javascript/vyzov-java-script-koda-po-kliku-na-ssylku-sobytiya-dom/

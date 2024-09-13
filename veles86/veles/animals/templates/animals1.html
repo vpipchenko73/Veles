@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+{% load animals_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<style>
+
+
+</style>
+
+
+</head>
+
+<body>
+{% include "_modal.html" %}
+
+<!-- Bootstrap 5 -->
+    <script src="{% static 'js/bootstrap5.modal.forms.js' %}"></script>
+    <!-- You can alternatively load the minified version -->
+    <script src="{% static 'js/bootstrap5.modal.forms.min.js' %}"></script>
+    <script src="{% static 'js/application_functions.js' %}"></script>
+
+<header class="header0">
+    <img src="{% static 'site_files/header_1.jpg' %}" alt="Dog_image">
+</header>
+
+<div class="header1">
+    <div class="header2">
+    </div>
+
+    <div class="header3">
+
+        <div class="n_animals1">
+            Наши питомцы
+            <!--            <p>&#169; &#8194;OOO &#34;UMBA-DOG &#34; &#9742;  +7 922 1111001</p>-->
+        </div>
+    </div>
+
+    <div class="s_animals1">
+        <a href="{% url 'index' %}">На главную страницу</a>
+    </div>
+
+</div>
+
+
+<div class="bord_animals1">
+    <div class="bord1_animals1">
+        <div class="label1_animals1">
+            <p> Обращение приюта </p>
+        </div>
+        <div class="text1_animals1">
+            <p>
+                Пожалуйста посмотрите на наших питомцев, может кто-нибудь из них тронет Ваше сердце и станет,
+                в последствии, самым верным Вашим другом который принесет Ваш дом много радости и веселья или
+                станет самым незаменимым помошником в охране дома или на охоте, а они обретут семью которой им так не
+                хватает !
+                <br>
+                * Для более детального знакомства с питомцем кликните на его фотографию в карточке
+            </p>
+        </div>
+        <div class="znak_animals1">
+            <img src="{% static 'site_files/znak2.svg' %}" alt="Знак_велес" width="300" height="367">
+        </div>
+        <div class="dog_in_book ">
+            <img src="{% static 'site_files/dog_reader.svg' %}" alt="Собака на книгах" width="111" height="166">
+        </div>
+    </div>
+
+
+    <div class="bord2_animals1">
+
+        {% for dog in dogs %}
+        <div class="card"
+             style="width: 220px; height: 300px; border-radius: 5px; margin: 10px;">
+            <img id="test-{{ dog.pk }}" src={{dog.image.url}} alt="Foto_Dog"
+                 style="width: auto; height: 49%; display: block; margin: 0 auto; " class="read-dog card-img-top"
+                 data-form-url="{% url 'read_dog' dog.pk %}" >
+
+            <div class="card-body">
+                <span class="card-text">
+                    <b>Кличка:</b> {{dog.name}} <br>
+                    <b>Возраст (лет):</b> {{dog.dog_age}}  <br>
+                    <b>Пол:</b> {{dog.get_gender_display}} <br>
+                    <b>Характер:</b> {{dog.get_personality_display}}
+                        {% comment %}
+                        {% get_images dog.pk as images %}
+                        {% for cart in images %}
+                            <div >
+                            <img src={{cart.image.url}} style="width: 50px; height: auto; border-radius: 5px;" alt="Foto_Dog">
+                            </div>
+                        {% endfor %}
+                        {% endcomment %}
+                </span>
+
+            </div>
+        </div>
+        {% endfor %}
+
+
+    </div>
+</div>
+
+{% include "footer.html" %}
+
+
+<div>
+{%comment%}
+<button id="message-create" class="btn btn-primary" type="button" name="button" data-form-url="{% url 'message_create' %}">Create book</button>
+{%endcomment%}
+</div>
+
+<script>
+
+</script>
+
+<div  style="width: 300px; height: 300px; border: solid; border-color: red;">
+    <img src={{dogs.1.image.url}} alt="Foto_Dog" style="width:200px;height:200px; object-fit: cover;">
+</div>
+
+</body>
+</html>

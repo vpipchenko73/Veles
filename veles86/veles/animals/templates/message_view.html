@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header>
+    <div style="width: 1440px; height: 80px; background: #0d6efd; margin: auto; display: flex; align-items: center;">
+        <div style="width: 80%; text-transform: uppercase; margin-left: 40px; color: white;
+                    font-size:x-large; border: solid; border-color: red; margin: auto; text-align: center;">
+            Aдминистративная панель &mdash; просмотр присланных сообщений
+        </div>
+        <div style="width: 20%;display: flex; justify-content: flex-end; margin-right: 10px;">
+            <a href="{% url 'admin_panel2' %}" class="btn btn-warning">На главную страницу</a>
+        </div>
+    </div>
+
+</header>
+
+<body>
+{% include "_modal.html" %}
+
+<!-- Bootstrap 5 -->
+<script src="{% static 'js/bootstrap5.modal.forms.js' %}"></script>
+<!-- You can alternatively load the minified version -->
+<script src="{% static 'js/bootstrap5.modal.forms.min.js' %}"></script>
+<script src="{% static 'js/application_functions.js' %}"></script>
+
+<div style="display: flex; justify-content: center; ">
+    <div style="width: 80%; margin-top: 5%">
+        {% if messages %}
+        {% for message in messages %}
+        <fieldset
+                style="border: solid; border-color: #0d6efd; border-width: 3px; border-radius: 10px; margin-bottom: 20px;">
+            <legend class="bg-primary text-white p-8" style="padding-left: 15px;">Сообщение дата &mdash;
+                {{message.datecreation}}
+            </legend>
+            <ul>
+                <li>Автор &mdash; {{message.author}}</li>
+                <li>Телефон &mdash; {{message.phone_number}}</li>
+                <li>E-mail &mdash; {{message.email}}</li>
+                <li>Тема &mdash; {{message.theme}}</li>
+                <li>Содержание &mdash; {{message.text}}</li>
+            </ul>
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 10px; margin-right: 10px;">
+                <!--                <a href="{% url 'message_delete' message.pk %}" class="btn btn-danger">Удалить</a>-->
+                <button class="message-delete btn btn-warning" type="button" name="button"
+                        data-form-url="{% url 'message_delete' message.pk %}">Удалить
+                </button>
+            </div>
+        </fieldset>
+        {% endfor%}
+        {% else %}
+        <div style="text-align: center; color: #0d6efd">
+        <h1>Сообщений нет!</h1>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>

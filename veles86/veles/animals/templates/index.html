@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+</head>
+
+<style>
+
+
+</style>
+
+
+</head>
+<body>
+
+{% include "_modal.html" %}
+
+<!-- Bootstrap 5 -->
+    <script src="{% static 'js/bootstrap5.modal.forms.js' %}"></script>
+    <!-- You can alternatively load the minified version -->
+    <script src="{% static 'js/bootstrap5.modal.forms.min.js' %}"></script>
+    <script src="{% static 'js/application_functions.js' %}"></script>
+
+<header class="header0">
+    <img src="{% static 'site_files/header_1.jpg' %}" alt="Dog_image">
+</header>
+
+<div class="header1">
+    <div class="header2">
+    </div>
+
+    <div class="header3">
+
+        <div class="h_name">
+            Приют для животных без владельцев &#34;ВЕЛЕС&#34;
+        </div>
+    </div>
+
+    <div class="h_ssylki1">
+
+        <ul class="ul_head">
+            <li class="li_head"><a class="active" href="#home">Home</a></li>
+            <li class="li_head"><a href="#news">Правила приюта</a></li>
+            <li class="li_head"><a href="{% url 'animals' %}">Наши питомцы</a></li>
+            <li class="li_head"><a href="{% url 'dog_create' %}">Акции</a></li>
+        </ul>
+    </div>
+
+    <div class="h_ssylki2">
+
+        <ul class="ul_head">
+            <li class="li_head"><a class="active" href="{% url 'post_list' %}">Лента новостей</a></li>
+            <li class="li_head"><a href="#news">Хорошие новости</a></li>
+            <li class="li_head"><a href="#contact">Страница персонала</a></li>
+            <li class="li_head"><a href="{% url 'admin_panel2' %}">Акции</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="bord">
+    <div class="bord1">
+        <div class="label1">
+            <p class="first_zn"> О Нас </p>
+        </div>
+        <div class="text1">
+            <p class="first_zn">
+                Согласно данным ЕГРЮЛ, организация АНО "ВЕЛЕС" — или АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ
+                "ПРИЮТ ДЛЯ ЖИВОТНЫХ БЕЗ ВЛАДЕЛЬЦЕВ "ВЕЛЕС" — зарегистрирована 11 февраля 2020 года по адресу 628007,
+                Ханты-Мансийский автономный округ - Югра, г. Ханты-Мансийск, ул. Патриса Лумумбы, д. 57, кв. 1.
+                Налоговый орган — Управление Федеральной налоговой службы по Ханты-Мансийскому автономному
+                округу-Югре. ... Регистрационный номер в
+                ПФР — 027001024630, регистрационный номер в ФСС — 860000717086001. Организационно-правовой формой
+                является "Автономные некоммерческие организации".
+                Основным видом деятельности АНО "ВЕЛЕС
+            </p>
+        </div>
+        <div class="znak">
+            <img src="{% static 'site_files/znak2.svg' %}" alt="Знак_велес" width="450" height="550">
+        </div>
+    </div>
+
+
+    <div style="display: block; margin: 10px auto; z-index: 1; background:gray; ">
+        <div class="bord2_name" style="text-align: center; margin-bottom: 15px; ">
+            <p class="first_zn">Наша галерея</p>
+        </div>
+        <div class="bord2">
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-interval="1000">
+                <div class="carousel-inner" style="border-radius: 10px;">
+                    <div class="carousel-item active">
+                        <img src="{% static 'site_files/Carusel/1.jpg' %}" alt="..." class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block" style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для первого слайда.</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/2.jpg' %}" alt="..." class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/3.jpg' %}" alt="..." class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/4.jpg' %}" alt="..." class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/5.jpg' %}" alt="..."
+                             style="width: auto; height: 427px; display: block; margin: 0 auto; border-radius:30px;">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/cila.jpg' %}" alt="..."
+                             style="width: auto; height: 427px; display: block; margin: 0 auto; border-radius:30px;">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/ded.jpg' %}" alt="..."
+                             style="width: auto; height: 427px; display: block; margin: 0 auto; border-radius:30px;">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'site_files/Carusel/yosa.jpg' %}" alt="..."
+                             style="width: auto; height: 427px; display: block; margin: 0 auto; border-radius:30px;">
+                        <div class="carousel-caption d-none d-md-block " style="margin-top: 0px; ">
+                            <span>Некоторый репрезентативный заполнитель для второго слайда.</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="small_notes" >
+            Раздел для оперативных объявлений
+        </div>
+    </div>
+
+</div>
+</div>
+{% include "footer.html" %}
+</body>
+</html>
